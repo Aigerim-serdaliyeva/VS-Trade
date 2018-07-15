@@ -287,9 +287,43 @@
 
   .brend {
 
-    &-hp {
+    &-content {
       
+    }
+
+    &-img {
+      width: 48%;
+      &-title {
+        margin-top: 0;
+      }
+      margin-bottom: 10px;
+    }
+
+    &-hp {
       display: block;
+
+      &-image {
+        margin: 0 auto 10px;
+        img {
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    &-form {
+      
+      &-content {
+        display: block;
+      }
+
+      .input-div {
+        margin-right: 0;
+      }
+
+      &-title {
+        max-width: none;
+        margin-bottom: 15px;
+      }
     }
   }
 }
@@ -486,6 +520,20 @@
 
     .form {
       text-align: center;
+    }
+  }
+
+  .brend {
+    &-title {
+      text-align: center;
+    }
+    &-header {
+      display: block;
+
+      img {
+        margin: 0 auto 10px;
+        display: block;
+      }
     }
   }
 
