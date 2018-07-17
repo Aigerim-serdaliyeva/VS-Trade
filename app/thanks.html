@@ -92,29 +92,33 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </section>
 
     <footer class="footer">
-        <div class="container">
-          <div class="footer-content">
-            <a href="/" class="logo"><img src="./img/logo2.png" alt=""></a>
-  
-            <div class="footer-address">
-              РК, 050056, 
-              <span class="break">г. Алматы,</span> 
-              ул. Аральская, 8
-            </div>
-  
-            <a id="phone_number" href="tel:+77272275820" class="text-phone">+7 (727) 227-58-20</a>
-  
-            <a href="#" class="button" data-remodal-target="zvonok-modal">Заказать обратный звонок</a>
-  
-            <div class="footer-company">
-              <div>Сделано командой</div>
-              <a href="http://marketing-time.kz" target="_blank">
-                <img src="./img/company-logo.png" alt="">
-              </a>
-            </div>
+      <div class="container">
+        <div class="footer-content">
+          <a href="/" class="logo"><img src="./img/logo2.png" alt=""></a>
+
+          <div class="footer-address">
+            РК, 050056, 
+            <span class="break">г. Алматы,</span> 
+            ул. Аральская, 8
+          </div>
+
+          <div class="footer-phone">
+            <a id="phone_number" href="tel:+77272275820" class="text-phone">+7 (727) 227-58-20</a> 
+            <a href="#" data-remodal-target="politika-konfidensialnosti">Политика Конфиденциальности</a>
+          </div>
+          
+
+          <a href="#" class="button" data-remodal-target="zvonok-modal-obratnyi">Заказать обратный звонок</a>
+
+          <div class="footer-company">
+            <div>Сделано командой</div>
+            <a href="http://marketing-time.kz" target="_blank">
+              <img src="./img/company-logo.png" alt="">
+            </a>
           </div>
         </div>
-      </footer>
+      </div>
+    </footer>
       
     </div>
     
@@ -123,8 +127,33 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
       <div class="form">
         <div class="form-title">
-            Оставьте заявку, <br>
-            и наш консультант Вам перезвонит   
+          Оставьте заявку, <br>
+          и наш менеджер проконсультирует Вас!   
+        </div>
+        <form class="five_crm_form" action="/mail.php" method="post">
+          <input type="hidden" name="info" value="Оставьте заявку, и наш менеджер проконсультирует Вас! ">
+          <div class="input-div">
+            <input type="text" class="input" name="name" placeholder="Введите Фамилию и Имя*" required>
+            <span class="error-message">Заполните это поле</span>
+          </div>
+          <div class="input-div">
+            <input type="tel" class="input" name="phone" placeholder="Введите номер телефона*" required>
+            <span class="error-message">Заполните это поле</span>
+          </div>
+          <div class="form-info">* Ваши данные в безопасности и не будут переданы третьим лицам</div>
+    
+          <button class="button ajax-submit" type="submit" id="polu4it_besplatnui_konsultasiu">Получить бесплатную консультацию</button>
+        </form>
+      </div>    
+    </div>  
+  
+    <div class="remodal remodal-small" data-remodal-id="zvonok-modal-obratnyi" data-remodal-options="hashTracking: true">
+      <button data-remodal-action="close" class="remodal-close"></button>
+  
+      <div class="form">
+        <div class="form-title">
+          Закажите обратный звонок, <br>
+          и мы свяжемся с Вами!   
         </div>
         <form class="five_crm_form" action="/mail.php" method="post">
           <input type="hidden" name="info" value="Обратный звонок">
@@ -138,10 +167,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
           <div class="form-info">* Ваши данные в безопасности и не будут переданы третьим лицам</div>
     
-          <button class="button ajax-submit" type="submit" id="zakazat_zvonok">Заказать обратный звонок</button>
+          <button class="button ajax-submit" type="submit" id="zakazat_obratnyi_zvonok">Заказать обратный звонок</button>
         </form>
       </div>    
-    </div>
+    </div> 
      
     <link rel="stylesheet" href="./css/libs.min.css">
     <link rel="stylesheet" href="./css/main.min.css">
