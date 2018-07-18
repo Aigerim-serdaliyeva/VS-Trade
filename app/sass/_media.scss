@@ -285,6 +285,19 @@
         }
       }
     }
+
+    &-company {
+      .company {
+        &-marka {
+          flex-direction: column;
+
+          img {
+            margin-bottom: 10px;
+            margin-right: 0;
+          }
+        }
+      }
+    }
   }
 
   .special {
@@ -453,16 +466,6 @@
       &-form {
         form {
           padding: 0;
-        }
-      }
-    }
-
-    &-company {
-      .company {
-        &-marka {
-          img {
-            margin-right: 15px;
-          }
         }
       }
     }

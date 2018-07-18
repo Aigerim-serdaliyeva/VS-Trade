@@ -77,6 +77,11 @@ body {
 
   .text-phone {
     margin-left: 30px;
+    font-weight: 600;
+  }
+
+  &-schedule {
+    font-weight: 600;
   }
 }
 
@@ -489,6 +494,7 @@ body {
       // align-items: center;
 
       &-img {
+        flex-shrink: 0;
         margin-top: 55px;
       }
 
@@ -638,12 +644,14 @@ body {
   }
 
   &-image {
-    margin: 0 auto 15px;
-    // text-align: center;
+    text-align: center;
+    display: block;
+    margin-bottom: 15px;
   }
 
   &-srok {
     display: flex;
+    align-items: center;
     .timer-element {
       font-weight: 600;
     }
@@ -722,6 +730,12 @@ body {
 .special {
   max-width: 750px;
 
+  .form-title {
+    span {
+      font-weight: 600;
+    }
+  }
+
   &-content {
     display: flex;
     justify-content: space-between;
@@ -736,6 +750,13 @@ body {
 
     &-lenta {
       top: 20px;
+    }
+
+    &-srok {
+      margin-bottom: 15px;
+      &-title {
+        max-width: 150px;
+      }
     }
   }
 
