@@ -58,6 +58,7 @@ body {
   &-slogan {
     font-weight: bold;
     color: #818286;
+    font-size: 14px;
     // max-width: 240px;
   }
 
@@ -206,6 +207,10 @@ body {
   }
 
   &-product {
+
+    .product-carousel {
+      display: none;
+    }
 
     &-content {
       display: flex;
@@ -509,7 +514,7 @@ body {
 
       &-marka {
         display: flex;
-        flex-wrap: wrap;
+        // flex-wrap: wrap;
         align-items: center;
         img {
           margin-right: 45px;

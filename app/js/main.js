@@ -162,6 +162,21 @@ $(document).ready(function() {
     }
   });
 
+  $(".product-carousel").owlCarousel({
+    nav: false,
+    dots: true,
+    loop: false,
+    smartSpeed: 500,
+    margin: 30,
+    navText: ['', ''],
+    responsive: {
+      0: { items: 1, mouseDrag: false },
+      480: { items: 2, mouseDrag: true },
+      768: { items: 1 },
+      992: { items: 3 },
+    },
+  });
+
   $(".models-carousel").owlCarousel({
     nav: false,
     dots: true,
