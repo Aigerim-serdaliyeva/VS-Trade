@@ -520,6 +520,10 @@
 
     &-contacts {
       .map {
+        & > ymaps {
+          height: 300px !important;
+        }
+
         &-content {
           padding: 20px 0 0 0;
           position: static;
