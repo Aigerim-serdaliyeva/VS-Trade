@@ -607,8 +607,10 @@ body {
       width: 100%;
       padding: 40px;
       background-image: url('../img/thanks-back.jpg');
-      background-size: cover;
-      background-position: center center;
+      background-size: auto;
+      background-repeat: no-repeat;
+      background-position: top center;
+      background-color: #ebebeb;
     }
 
     &-title {
