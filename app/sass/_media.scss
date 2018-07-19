@@ -500,8 +500,8 @@
 
     &-advantages {
       .advantage {
-        img {
-          padding: 0 15px;
+        &-image {
+          width: 100px;
         }
       }
     }

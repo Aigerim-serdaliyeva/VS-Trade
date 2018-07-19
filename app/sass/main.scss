@@ -361,8 +361,9 @@ body {
         align-items: center;
       }
 
-      img {
-        padding: 0 30px;
+      &-image {
+        width: 130px;
+        flex-shrink: 0;
       }
 
       &-info {
