@@ -1,0 +1,15 @@
+[0718/213549.318:ERROR:process_reader_win.cc(151)] SuspendThread: Отказано в доступе. (0x5)
+[0718/213549.349:ERROR:process_reader_win.cc(151)] SuspendThread: Отказано в доступе. (0x5)
+[0718/213549.349:ERROR:process_reader_win.cc(151)] SuspendThread: Отказано в доступе. (0x5)
+[0718/213549.350:ERROR:process_reader_win.cc(151)] SuspendThread: Отказано в доступе. (0x5)
+[0718/213549.350:ERROR:process_reader_win.cc(151)] SuspendThread: Отказано в доступе. (0x5)
+[0718/213549.351:ERROR:process_reader_win.cc(151)] SuspendThread: Отказано в доступе. (0x5)
+[0718/213549.351:ERROR:process_reader_win.cc(151)] SuspendThread: Отказано в доступе. (0x5)
+[0718/213549.351:ERROR:process_reader_win.cc(151)] SuspendThread: Отказано в доступе. (0x5)
+[0718/213549.352:ERROR:process_reader_win.cc(123)] NtOpenThread: {Отказано в доступе} Процесс запросил доступ к объекту, но права на доступ не предоставлены. (0xc0000022)
+[0718/213549.413:ERROR:exception_snapshot_win.cc(88)] thread ID 6012 not found in process
+[0718/213551.447:ERROR:process_info.cc(329)] VirtualQueryEx: Отказано в доступе. (0x5)
+[0718/213551.447:ERROR:process_info.cc(550)] ReadMemoryInfo failed
+[0718/213551.449:ERROR:process_reader_win.cc(123)] NtOpenThread: {Отказано в доступе} Процесс запросил доступ к объекту, но права на доступ не предоставлены. (0xc0000022)
+[0718/213551.449:ERROR:exception_snapshot_win.cc(88)] thread ID 3968 not found in process
+[0718/213551.449:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: Попытка доступа к процессу, выполняющему процедуру завершения. (0xc000010a)

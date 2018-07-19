@@ -108,7 +108,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               <div class="banner-srok-title">Срок предложения истекает через:</div>
               <script src="http://megatimer.ru/s/6f87a66cc3bfb0d7ca20ca27aee5c07d.js"></script>
             </div>
-            <button class="button" data-remodal-target="special-modal">Оставить заявку</button>
+            <button class="button" data-remodal-target="special-modal-hp">Оставить заявку</button>
             <div class="banner-info">*предложение не распространяется на авторизованных партнеров</div>
           </div>    
         </div>
@@ -725,6 +725,57 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </form>
       </div>
     </div>
+    
+  </div>
+
+
+  <div class="remodal special" data-remodal-id="special-modal-hp" data-remodal-options="hashTracking: true">
+    <button data-remodal-action="close" class="remodal-close"></button>
+  
+    <div class="form-title">
+      Закупите <b>оригинальные картриджи HP</b> на сумму <span class="accent">300 тыс.тенге</span> и получите в подарок
+      <b>МФУ HP LJ Pro MFP M130a</b> стоимостью <span class="accent">45 000 тенге!</span>
+    </div>
+  
+  
+    <div class="special-content">
+      <div class="banner">
+        <div class="banner-image">
+          <img src="./img/kartridj.png" alt="">
+        </div>
+        <div class="banner-srok">
+          <div class="banner-srok-title">Срок предложения истекает через:</div>
+          <script src="http://megatimer.ru/s/6f87a66cc3bfb0d7ca20ca27aee5c07d.js"></script>
+        </div>
+        <div class="banner-info">*предложение не распространяется на авторизованных партнеров</div>
+      </div>
+  
+      <div class="form">
+        <form class="five_crm_form" action="/mail.php" method="post">
+          <input type="hidden" name="info" value="Закупите оригинальные картриджи HP на сумму 300 тыс.тенге и получите в подарок МФУ HP LJ Pro MFP M130a стоимостью 45 000 тенге!">
+          <div class="input-div">
+            <input type="text" class="input" name="name" placeholder="Введите Фамилию и Имя*" required>
+            <span class="error-message">Заполните это поле</span>
+          </div>
+          <div class="input-div">
+            <input type="text" class="input" name="company" placeholder="Введите Название компании*" required>
+            <span class="error-message">Заполните это поле</span>
+          </div>            
+          <div class="input-div">
+            <input type="tel" class="input" name="phone" placeholder="Введите номер телефона*" required>
+            <span class="error-message">Заполните это поле</span>
+          </div>
+          <div class="input-div">
+            <input type="email" class="input" name="email" placeholder="Укажите e-mail*" required>
+            <span class="error-message">Заполните это поле</span>
+          </div> 
+          <div class="form-info">* Ваши данные в безопасности и не будут переданы третьим лицам</div>
+    
+          <button class="button ajax-submit" type="submit" id="ostavit_zayavku">Оставить заявку</button>
+        </form>
+      </div>
+    </div>
+  
     
   </div>
 
