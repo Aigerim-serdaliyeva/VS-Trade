@@ -747,6 +747,14 @@ body {
   max-width: 750px;
 
   .form-title {
+    font-size: 18px;
+    font-weight: normal;
+
+    &--semibold {
+      font-size: 16px;
+      font-weight: 600;
+    }
+
     span {
       font-weight: 600;
     }
@@ -761,8 +769,9 @@ body {
     border: 0;
     width: auto;
     max-width: none;
-    margin-left: -35px;
-    padding: 40px;
+    margin-left: -30px;
+    padding: 0 30px;
+    flex-grow: 1;
 
     &-lenta {
       top: 20px;
@@ -776,14 +785,6 @@ body {
     }
   }
 
-  .form {
-
-    &-title {
-      font-weight: normal;
-    }
-    .button {
-    }
-  }
 }
 
 .brend {
