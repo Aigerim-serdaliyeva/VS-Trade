@@ -594,6 +594,12 @@
       &-lenta {
         top: 0px;
       }
+
+      &-srok {
+        &-title {
+          max-width: none;
+        }
+      }
     }
 
     .form {
