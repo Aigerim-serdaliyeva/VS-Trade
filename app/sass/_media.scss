@@ -212,6 +212,35 @@
     }
   }
 
+  .brend {
+    &-form {     
+      &-content {
+        display: block;
+      }
+
+      .input-div {
+        margin-right: 0;
+
+        &:nth-child(2n) {
+          margin-right: 30px;
+        }
+      }
+
+      &-title {
+        max-width: none;
+        margin-bottom: 15px;
+      }
+
+      .button {
+        width: 100%;
+      }
+
+      form {
+        margin: 0 auto;
+      }
+    }
+  }
+
 }
 
 /* Small Devices, Tablets */
@@ -278,6 +307,12 @@
       }
     }
 
+    &-brend {
+      .marka {
+        width: 50%;
+      }
+    }
+
     &-dostavka {
       &-form {
         form {
@@ -329,9 +364,12 @@
   }
 
   .brend {
-
-    &-content {
-      
+    &-header {
+      flex-direction: column;
+      text-align: center;
+      img {
+        margin-bottom: 10px;
+      }
     }
 
     &-img {
@@ -351,25 +389,17 @@
           margin-bottom: 10px;
         }
       }
-    }
+    }    
+  }
+}
 
+@media only screen and (max-width : 600px) {
+  .brend {
     &-form {
-      
-      &-content {
-        display: block;
-      }
-
       .input-div {
-        margin-right: 0;
-      }
-
-      &-title {
-        max-width: none;
-        margin-bottom: 15px;
-      }
-
-      .button {
-        width: 100%;
+        &:nth-child(2n) {
+          margin-right: 0;
+        }
       }
     }
   }
@@ -463,7 +493,7 @@
 
     &-brend {
       .marka {
-        display: block;
+        width: auto;
         margin: 0 auto 15px;
       }
     }
