@@ -119,6 +119,8 @@
       }
 
       &-block {
+        width: 100%;
+        min-height: 400px;
         margin: 0 0 20px;
       }
 
@@ -423,7 +425,8 @@
       
       &-block {
         background-image: none;
-        // color: #000;
+        min-height: auto;
+        width: auto;
         padding: 15px;
         background-color: #3598ab;
         margin: 0 -15px 15px;
