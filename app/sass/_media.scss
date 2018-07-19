@@ -23,10 +23,11 @@
     &-product {
       &-content {
         flex-wrap: wrap;
+        justify-content: center;
       }
 
       .product {
-        margin-bottom: 15px;
+        margin: 0 10px 15px;
       }
     }
 
