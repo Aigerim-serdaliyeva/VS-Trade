@@ -23,10 +23,11 @@
     &-product {
       &-content {
         flex-wrap: wrap;
+        justify-content: center;
       }
 
       .product {
-        margin-bottom: 15px;
+        margin: 0 10px 15px;
       }
     }
 
@@ -103,6 +104,10 @@
     .logo, .text-phone {
       margin: 0;
     }
+
+    .button {
+      margin-left: 10px;
+    }
   }
 
   .footer {
@@ -119,6 +124,8 @@
       }
 
       &-block {
+        width: 100%;
+        min-height: 400px;
         margin: 0 0 20px;
       }
 
@@ -205,6 +212,35 @@
     }
   }
 
+  .brend {
+    &-form {     
+      &-content {
+        display: block;
+      }
+
+      .input-div {
+        margin-right: 0;
+
+        &:nth-child(2n) {
+          margin-right: 30px;
+        }
+      }
+
+      &-title {
+        max-width: none;
+        margin-bottom: 15px;
+      }
+
+      .button {
+        width: 100%;
+      }
+
+      form {
+        margin: 0 auto;
+      }
+    }
+  }
+
 }
 
 /* Small Devices, Tablets */
@@ -271,6 +307,12 @@
       }
     }
 
+    &-brend {
+      .marka {
+        width: 50%;
+      }
+    }
+
     &-dostavka {
       &-form {
         form {
@@ -298,6 +340,12 @@
         }
       }
     }
+
+    &-thanks {
+      &-content {
+        background-image: none;
+      }
+    }
   }
 
   .special {
@@ -316,9 +364,12 @@
   }
 
   .brend {
-
-    &-content {
-      
+    &-header {
+      flex-direction: column;
+      text-align: center;
+      img {
+        margin-bottom: 10px;
+      }
     }
 
     &-img {
@@ -338,25 +389,17 @@
           margin-bottom: 10px;
         }
       }
-    }
+    }    
+  }
+}
 
+@media only screen and (max-width : 600px) {
+  .brend {
     &-form {
-      
-      &-content {
-        display: block;
-      }
-
       .input-div {
-        margin-right: 0;
-      }
-
-      &-title {
-        max-width: none;
-        margin-bottom: 15px;
-      }
-
-      .button {
-        width: 100%;
+        &:nth-child(2n) {
+          margin-right: 0;
+        }
       }
     }
   }
@@ -417,7 +460,8 @@
       
       &-block {
         background-image: none;
-        // color: #000;
+        min-height: auto;
+        width: auto;
         padding: 15px;
         background-color: #3598ab;
         margin: 0 -15px 15px;
@@ -449,15 +493,15 @@
 
     &-brend {
       .marka {
-        display: block;
+        width: auto;
         margin: 0 auto 15px;
       }
     }
 
     &-advantages {
       .advantage {
-        img {
-          padding: 0 15px;
+        &-image {
+          width: 100px;
         }
       }
     }
@@ -468,10 +512,18 @@
           padding: 0;
         }
       }
+
+      .banner {
+        border: 0;
+      }
     }
 
     &-contacts {
       .map {
+        & > ymaps {
+          height: 300px !important;
+        }
+
         &-content {
           padding: 20px 0 0 0;
           position: static;
@@ -541,6 +593,12 @@
 
       &-lenta {
         top: 0px;
+      }
+
+      &-srok {
+        &-title {
+          max-width: none;
+        }
       }
     }
 

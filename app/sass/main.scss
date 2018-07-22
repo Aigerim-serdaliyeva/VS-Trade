@@ -317,14 +317,19 @@ body {
 
     &-content {
       display: flex;
-      justify-content: space-between;
       flex-wrap: wrap;
+      justify-content: center;
     }
 
     .marka {
+      width: 33%;
       margin-bottom: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
       &-img {
-        height: 230px;
+        flex-grow: 1;
       }
     }
 
@@ -356,8 +361,9 @@ body {
         align-items: center;
       }
 
-      img {
-        padding: 0 30px;
+      &-image {
+        width: 130px;
+        flex-shrink: 0;
       }
 
       &-info {
@@ -607,8 +613,10 @@ body {
       width: 100%;
       padding: 40px;
       background-image: url('../img/thanks-back.jpg');
-      background-size: cover;
-      background-position: center center;
+      background-size: auto;
+      background-repeat: no-repeat;
+      background-position: top center;
+      background-color: #ebebeb;
     }
 
     &-title {
@@ -714,9 +722,11 @@ body {
   box-shadow: 0px 9px 20.58px 0.42px rgba(0, 0, 0, 0.35);
   background-color: $gray;
   max-width: 1010px;
+  letter-spacing: normal;
 
   &-title {
     font-size: 16px;
+    font-weight: 600;
     text-align: center;
   }
 
@@ -737,6 +747,14 @@ body {
   max-width: 750px;
 
   .form-title {
+    font-size: 18px;
+    font-weight: normal;
+
+    &--semibold {
+      font-size: 16px;
+      font-weight: 600;
+    }
+
     span {
       font-weight: 600;
     }
@@ -751,8 +769,9 @@ body {
     border: 0;
     width: auto;
     max-width: none;
-    margin-left: -35px;
-    padding: 40px;
+    margin-left: -30px;
+    padding: 0 30px;
+    flex-grow: 1;
 
     &-lenta {
       top: 20px;
@@ -766,14 +785,6 @@ body {
     }
   }
 
-  .form {
-
-    &-title {
-      font-weight: normal;
-    }
-    .button {
-    }
-  }
 }
 
 .brend {
@@ -816,9 +827,10 @@ body {
   }
 
   &-img {
+    text-align: center;
+
     &-title {
       font-size: 12px;
-      text-align: center;
       font-weight: 600;
       margin-top: 10px;
     }
@@ -848,6 +860,8 @@ body {
     .input-div {
       margin-right: 30px;
       flex-grow: 1;
+      width: 230px;
+
       &:nth-child(3), &:nth-child(5) {
         margin-right: 0;
       }
