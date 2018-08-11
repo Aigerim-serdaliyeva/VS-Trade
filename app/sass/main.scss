@@ -222,6 +222,11 @@ body {
     &-content {
       display: flex;
       justify-content: space-between;
+
+      &--samsung {
+        max-width: 600px;
+        margin: 0 auto;
+      }
     }
 
     .product {
@@ -648,6 +653,11 @@ body {
 
   &--epson {
     max-width: 400px;
+    position: relative;
+    max-width: 453px;
+    width: 100%;
+    flex-shrink: 0;
+    // padding: 30px 5px 25px;
   }
 
   &-title {
@@ -882,38 +892,34 @@ body {
   }
 
   &-hp {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-
-    &-image {
-      max-width: 125px;
-      img {
-        margin: 0 auto 20px;
-        display: block;
-      }
-      &-title {
-        font-size: 12px;
-        font-weight: 600;
-        margin-bottom: 20px;
-      }
-    }
-
-    &-block {
-      max-width: 600px;
-    }
-
     &-title {
+      text-align: center;
       font-weight: 600;
       margin-bottom: 20px;
     }
 
-    &-text {
-      margin-bottom: 15px;
-      span {
-        font-weight: 600;
+    &-content {
+      display: flex;
+      max-width: 480px;
+      justify-content: space-between;
+      margin: 0 auto 20px;
+    }
+
+    &-img {
+      max-width: 220px;
+      height: 120px;
+      background-color: #fff;
+      margin-bottom: 10px;
+      padding: 15px 5px 0;
+      img {
+        align-items: center;
       }
     }
+
+    &-text {
+      font-weight: 600;
+      text-align: center;
+    }   
   }
 }
 

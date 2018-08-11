@@ -402,6 +402,18 @@
         }
       }
     }
+
+    &-hp {
+      &-content {
+        flex-direction: column;
+      }
+      &-img {
+        margin: 0 auto 10px;
+      }
+      &-block {
+        margin-bottom: 15px;
+      }
+    }
   }
 }
 

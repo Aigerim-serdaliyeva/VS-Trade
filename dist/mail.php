@@ -3,9 +3,9 @@
 $method = $_SERVER['REQUEST_METHOD'];
 
 $project_name = "VSTRADE";
-$admin_email  = "dkravtsov@vstrade.kz, client@marketing-time.kz";
-$server_mail = "<dkravtsov@vstrade.kz>";
-$form_subject = "Климат (Лэндинг)";
+$admin_email  = "YNazaryants@vstrade.kz, client@marketing-time.kz";
+$server_mail = "<YNazaryants@vstrade.kz>";
+$form_subject = "Картридж (Лэндинг)";
 
 //Script Foreach
 $c = true;
