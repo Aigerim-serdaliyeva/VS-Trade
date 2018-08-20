@@ -227,6 +227,11 @@ body {
         max-width: 600px;
         margin: 0 auto;
       }
+
+      &--min {
+        max-width: 945px;
+        margin: 0 auto;
+      }
     }
 
     .product {
@@ -646,6 +651,7 @@ body {
 .banner {
   position: relative;
   max-width: 453px;
+  // max-width: 400px;
   width: 100%;
   flex-shrink: 0;
   border: 2px solid $accent;

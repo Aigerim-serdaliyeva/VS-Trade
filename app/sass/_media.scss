@@ -661,7 +661,13 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
-	
+	.section-main {
+    &-block {
+      background-position: right center;
+      &-samsung {
+      }
+    }
+  }
 }
 
 @media only screen and (min-width : 1920px) {
