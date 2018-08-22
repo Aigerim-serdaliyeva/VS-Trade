@@ -607,7 +607,6 @@ body {
       }
     }
   }
- 
 
   &-thanks {
     display: flex;
@@ -926,6 +925,20 @@ body {
       font-weight: 600;
       text-align: center;
     }   
+  }
+}
+
+#samsung-page {
+  .section-main {
+    .banner {
+      z-index: 0;
+
+      &-image {
+        position: relative;
+        margin: -40px 0 -30px;
+        z-index: -10;
+      }
+    }
   }
 }
 
