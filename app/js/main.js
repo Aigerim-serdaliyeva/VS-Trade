@@ -162,6 +162,8 @@ $(document).ready(function() {
     }
   });
 
+  
+
   $(".product-carousel").owlCarousel({
     nav: false,
     dots: true,
