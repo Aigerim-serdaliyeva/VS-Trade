@@ -26,7 +26,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
 </head>
 
-<body>
+<body id="samsung-page">
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PTFTHQ6"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -99,7 +99,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="banner-image">
               <img src="./img/kartridj-lazernyi.png" alt="">
             </div>
-            <div class="banner-podarok">Осталось <span>28</span> подарочных картриджей</div>
+            <div class="banner-podarok">Осталось <span id="cartridge-count">28</span> подарочных картриджей</div>
             <button class="button" data-remodal-target="special-modal-samsung">Успеть заказать</button>
             <div class="banner-info">*предложение не распространяется на&nbsp;зарегистрированных&nbsp;партнеров</div>
           </div>    
@@ -771,6 +771,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<link rel="stylesheet" href="./css/main.min.css">
 	<script src="./js/libs.min.js"></script>
   <script src="./js/main.min.js"></script>
+  <script>
+    $.get('/db.php?cartridge', function(data) {
+      console.log(data);
+      $("#cartridge-count").html(data);
+    });
+  </script>
     
 </body>
 </html>
